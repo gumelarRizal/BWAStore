@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\categoryController;
 
 /*
@@ -17,6 +18,7 @@ use App\Http\Controllers\categoryController;
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/category', [App\Http\Controllers\categoryController::class, 'index'])->name('categories');
+Route::get('/details/{id}', [App\Http\Controllers\DetailController::class, 'index'])->name('detail');
 
 // Route::get('/', function () {
 //     return view('welcome');
