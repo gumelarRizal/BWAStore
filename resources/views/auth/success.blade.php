@@ -21,7 +21,7 @@
                         <h2>Welcome to Store</h2>
                         <p>
                             Kamu sudah berhasil terdaftar <br />bersama
-                            kami. Let’s grow up now.
+                            kami. Let's grow up now.
                         </p>
                         <div>
                             <a
