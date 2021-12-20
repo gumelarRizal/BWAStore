@@ -118,7 +118,7 @@
                             Sign Up Now!
                         </a>
                         <a
-                            href="/login.html"
+                            href="{{route('login')}}"
                             class="btn btn-signup btn-block mt-2"
                         >
                             Back to sign in
