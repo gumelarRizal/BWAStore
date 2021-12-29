@@ -9,6 +9,7 @@ use App\Http\Controllers\categoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardProductController;
+use App\Http\Controllers\DashboardProductDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::get('/register/success', [App\Http\Controllers\Auth\RegisterController::c
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/dashboard-product', [App\Http\Controllers\DashboardProductController::class, 'index'])->name('dashboard-product');
+Route::get('/dashboard-product/{id}', [App\Http\Controllers\DashboardProductController::class, 'detail'])->name('dashboard-product-detail');
 // Route::get('/', function () {
 //     return view('welcome');
 // });

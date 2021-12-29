@@ -15,7 +15,7 @@
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
-        <link href="style/main.css" rel="stylesheet" />
+        <link href="/style/main.css" rel="stylesheet" />
         @stack('addon-style')
     </head>
 
@@ -26,7 +26,7 @@
                 <div class="border-right" id="sidebar-wrapper">
                     <div class="sidebar-heading text-center">
                         <img
-                            src="images/dashboard-store-log.svg"
+                            src="/images/dashboard-store-log.svg"
                             alt=""
                             class="my-4"
                         />
@@ -111,7 +111,7 @@
                                             data-toggle="dropdown"
                                         >
                                             <img
-                                                src="images/user_pc.png"
+                                                src="/images/user_pc.png"
                                                 alt=""
                                                 class="
                                                     roundd-circle
@@ -148,7 +148,7 @@
                                             class="nav-link d-inline-block mt-2"
                                         >
                                             <img
-                                                src="images/icon-cart-filled.svg"
+                                                src="/images/icon-cart-filled.svg"
                                                 alt=""
                                             />
                                             <div class="card-badge">3</div>
