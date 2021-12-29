@@ -33,16 +33,15 @@
                     </div>
                     <div class="list-group list-group-flush">
                         <a
-                            href="dashboard.html"
+                            href="{{route('dashboard')}}"
                             class="
                                 list-group-item list-group-item-action
-                                active
                             "
                         >
                             Dashboard
                         </a>
                         <a
-                            href="dashboard-product.html"
+                            href="{{route('dashboard-product')}}"
                             class="list-group-item list-group-item-action"
                         >
                             My Products
@@ -124,7 +123,7 @@
                                         </a>
                                         <div class="dropdown-menu">
                                             <a
-                                                href="/dashboard.html"
+                                                href="{{route('dashboard')}}"
                                                 class="dropdown-item"
                                             >
                                                 Dashboard
