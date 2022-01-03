@@ -14,4 +14,8 @@ class DashboardProductController extends Controller
     {
         return view('pages.dashboard-product-detail');
     }
+    public function create()
+    {
+        return view('pages.dashboard-product-create');
+    }
 }

@@ -31,6 +31,7 @@ Route::get('/register/success', [App\Http\Controllers\Auth\RegisterController::c
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/dashboard-product', [App\Http\Controllers\DashboardProductController::class, 'index'])->name('dashboard-product');
+Route::get('/dashboard-product/create', [App\Http\Controllers\DashboardProductController::class, 'create'])->name('dashboard-product-create');
 Route::get('/dashboard-product/{id}', [App\Http\Controllers\DashboardProductController::class, 'detail'])->name('dashboard-product-detail');
 // Route::get('/', function () {
 //     return view('welcome');
