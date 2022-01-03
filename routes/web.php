@@ -9,6 +9,7 @@ use App\Http\Controllers\categoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardProductController;
+use App\Http\Controllers\DashboardTransactionController;
 use App\Http\Controllers\DashboardProductDetailController;
 
 /*
@@ -34,9 +35,11 @@ Route::get('/dashboard-product', [App\Http\Controllers\DashboardProductControlle
 Route::get('/dashboard-product/create', [App\Http\Controllers\DashboardProductController::class, 'create'])->name('dashboard-product-create');
 Route::get('/dashboard-product/{id}', [App\Http\Controllers\DashboardProductController::class, 'detail'])->name('dashboard-product-detail');
 // Route::get('/', function () {
-//     return view('welcome');
-// });
+    //     return view('welcome');
+    // });
 
+Route::get('/dashboard/transaction', [App\Http\Controllers\DashboardTransactionController::class, 'index'])->name('dashboard-transaction');
+    
 Route::get('/debug-sentry', function () {
     throw new Exception('My first Sentry error!');
 });
