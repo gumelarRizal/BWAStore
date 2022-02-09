@@ -39,6 +39,7 @@ Route::get('/dashboard-product/{id}', [App\Http\Controllers\DashboardProductCont
     // });
 
 Route::get('/dashboard/transaction', [App\Http\Controllers\DashboardTransactionController::class, 'index'])->name('dashboard-transaction');
+Route::get('/dashboard/transaction/{id}', [App\Http\Controllers\DashboardTransactionController::class, 'details'])->name('dashboard-transaction-details');
     
 Route::get('/debug-sentry', function () {
     throw new Exception('My first Sentry error!');
